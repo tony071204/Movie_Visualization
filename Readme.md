@@ -51,44 +51,46 @@ Build a comprehensive analytics dashboard that enables data-driven decision maki
 - **plotly.express**: High-level charting interface
 - **plotly.graph_objects**: Custom chart configurations
 
+## Project Structure
+```
 movie-dashboard/
 │
-├── app.py                    # Main application entry point
-├── .env                      # Environment variables (DO_SPACES credentials)
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project documentation
+├── app.py                     # Main application entry point
+├── .env                       # Environment variables (DO_SPACES credentials)  
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
 │
-├── config/                   # Application configuration
+├── config/                    # Application configuration
 │   ├── __init__.py
-│   ├── settings.py          # Environment variables and app config
-│   └── theme.py             # Color schemes, fonts, and layout constants
+│   ├── settings.py            # Environment variables and app config
+│   └── theme.py               # Color schemes, fonts, and layout constants
 │
-├── database/                 # Database operations
+├── database/                  # Database operations
 │   ├── __init__.py
-│   ├── connection.py        # SQLite connection management
-│   └── downloader.py        # DigitalOcean Spaces sync logic
+│   ├── connection.py          # SQLite connection management
+│   └── downloader.py          # DigitalOcean Spaces sync logic
 │
-├── data/                     # Data access layer
+├── data/                      # Data access layer
 │   ├── __init__.py
-│   ├── queries.py           # SQL query definitions
-│   └── processors.py        # Data transformation and formatting
+│   ├── queries.py             # SQL query definitions
+│   └── processors.py          # Data transformation and formatting
 │
-├── visualizations/           # Chart generation modules
+├── visualizations/            # Chart generation modules
 │   ├── __init__.py
-│   ├── bar_charts.py        # Top films and efficiency charts
-│   ├── scatter_charts.py    # Log-scale distribution analysis
-│   ├── comparison_charts.py # Total vs first-month comparisons
-│   ├── time_series_charts.py# Revenue decay patterns
-│   ├── metrics.py           # KPI metric cards
-│   ├── tables.py            # Summary tables
-│   └── insights.py          # Text insights and recommendations
+│   ├── bar_charts.py          # Top films and efficiency charts
+│   ├── scatter_charts.py      # Log-scale distribution analysis
+│   ├── comparison_charts.py   # Total vs first-month comparisons
+│   ├── time_series_charts.py  # Revenue decay patterns
+│   ├── metrics.py             # KPI metric cards
+│   ├── tables.py              # Summary tables
+│   └── insights.py            # Text insights and recommendations
 │
-├── ui/                       # User interface components
+├── ui/                        # User interface components
 │   ├── __init__.py
-│   ├── layout.py            # Main dashboard structure
-│   ├── styles.py            # CSS styling definitions
-│   └── tabs.py              # Navigation tab components
+│   ├── layout.py              # Main dashboard structure
+│   ├── styles.py              # CSS styling definitions
+│   └── tabs.py                # Navigation tab components
 │
-└── server/                   # Server-side logic
+└── server/                    # Server-side logic
     ├── __init__.py
-    └── handlers.py          # Reactive event handlers and data flow
+    └── handlers.py            # Reactive event handlers and data flow
