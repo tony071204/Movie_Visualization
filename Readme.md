@@ -51,44 +51,44 @@ Build a comprehensive analytics dashboard that enables data-driven decision maki
 - **plotly.express**: High-level charting interface
 - **plotly.graph_objects**: Custom chart configurations
 
-## Project Structure
 movie-dashboard/
+│
 ├── app.py                    # Main application entry point
 ├── .env                      # Environment variables (DO_SPACES credentials)
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project documentation
 │
 ├── config/                   # Application configuration
-│   ├── init.py
+│   ├── __init__.py
 │   ├── settings.py          # Environment variables and app config
 │   └── theme.py             # Color schemes, fonts, and layout constants
 │
 ├── database/                 # Database operations
-│   ├── init.py
+│   ├── __init__.py
 │   ├── connection.py        # SQLite connection management
 │   └── downloader.py        # DigitalOcean Spaces sync logic
 │
 ├── data/                     # Data access layer
-│   ├── init.py
+│   ├── __init__.py
 │   ├── queries.py           # SQL query definitions
 │   └── processors.py        # Data transformation and formatting
 │
 ├── visualizations/           # Chart generation modules
-│   ├── init.py
+│   ├── __init__.py
 │   ├── bar_charts.py        # Top films and efficiency charts
 │   ├── scatter_charts.py    # Log-scale distribution analysis
 │   ├── comparison_charts.py # Total vs first-month comparisons
-│   ├── time_series_charts.py # Revenue decay patterns
+│   ├── time_series_charts.py# Revenue decay patterns
 │   ├── metrics.py           # KPI metric cards
 │   ├── tables.py            # Summary tables
 │   └── insights.py          # Text insights and recommendations
 │
 ├── ui/                       # User interface components
-│   ├── init.py
+│   ├── __init__.py
 │   ├── layout.py            # Main dashboard structure
 │   ├── styles.py            # CSS styling definitions
 │   └── tabs.py              # Navigation tab components
 │
 └── server/                   # Server-side logic
-├── init.py
-└── handlers.py          # Reactive event handlers and data flow
+    ├── __init__.py
+    └── handlers.py          # Reactive event handlers and data flow
