@@ -20,6 +20,10 @@ Build a comprehensive analytics dashboard that enables data-driven decision maki
 5. Calculating efficiency metrics (revenue per theater, revenue per admission)
 6. Link to project website: https://coral-app-hqnkj.ondigitalocean.app/
 
+## Architecture Design
+<img width="819" height="521" alt="image" src="https://github.com/user-attachments/assets/0a3dfb17-8e43-4c9d-aba8-5c8c814b04b9" />
+
+
 ## Data Source
 - **Database Type**: SQLite relational database
 - **Tables Structure**:
