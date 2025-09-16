@@ -18,6 +18,7 @@ Build a comprehensive analytics dashboard that enables data-driven decision maki
 3. Comparing first-month performance metrics against total lifetime earnings
 4. Providing interactive benchmarking against top 10 performers in the database
 5. Calculating efficiency metrics (revenue per theater, revenue per admission)
+6. Link to project website: https://coral-app-hqnkj.ondigitalocean.app/
 
 ## Data Source
 - **Database Type**: SQLite relational database
